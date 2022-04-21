@@ -1,2 +1,2 @@
 "use strict";(self.webpackChunkfake_store_api=self.webpackChunkfake_store_api||[]).push([[688],{32688:function(e,t,a){a.r(t);var n=a(67294),s=a(73727);t.default=function(){return n.createElement("div",{className:"container"},n.createElement("img",{src:"https://i0.wp.com/saedx.com/blog/wp-content/uploads/2019/01/saedx-blog-featured-70.jpg?fit=1200%2C500&ssl=1",className:"rounded mx-auto container",alt:"error-img"}),n.createElement(s.rU,{to:"/"},n.createElement("button",{type:"button",className:"btn btn-outline-success btn-sm container"},"Back Home")))}}}]);
-//# sourceMappingURL=688.main.js.map
+//# sourceMappingURL=688.bundle.js.map
