@@ -7,7 +7,7 @@ export const errorBoundary = (WrappedComponent) => {
     "https://cdn1.vectorstock.com/i/1000x1000/43/65/boy-at-computer-and-oops-vector-38214365.jpg";
 
   return class extends Component {
-    state = { error: false};
+    state = { error: true};
     static getDerivedStateFromError = () => ({ error: true });
 
     render() {
