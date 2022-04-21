@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import { func, string } from "prop-types";
 
 const Error = ({ img, title, action }) => {
   const history = useHistory();
@@ -31,5 +32,12 @@ const Error = ({ img, title, action }) => {
     </div>
   );
 };
+
+Error.propTypes = {
+  img: string.isRequired,
+  title: string.isRequired,
+  action: func,
+};
+Error.defaultProps = { func: () => {} };
 
 export default Error;

@@ -10,23 +10,25 @@ const Favorites = lazy(() => import("./containers/Favorites"));
 const Details = lazy(() => import("./containers/Details"));
 const NotFound = lazy(() => import("./components/NotFound"));
 
-const App = () => (
-  <Suspense
-  fallback={
-    <div>
+const App = () => {
+  return (
+    <Suspense
+      fallback={
+        <div>
           <Loader />
         </div>
       }
-      >
+    >
       <Layout>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/favorites" component={Favorites} />
-        <Route exact path="/details/:id" component={Details} />
-        <Route component={NotFound} />
-      </Switch>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/favorites" component={Favorites} />
+          <Route exact path="/details/:id" component={Details} />
+          <Route component={NotFound} />
+        </Switch>
       </Layout>
     </Suspense>
-);
+  );
+};
 
 export default errorBoundary(App);

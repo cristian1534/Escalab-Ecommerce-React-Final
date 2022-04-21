@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NotFound = () => (
   <div className="container">
@@ -7,6 +8,14 @@ const NotFound = () => (
       className="rounded mx-auto container"
       alt="error-img"
     ></img>
+    <Link to="/">
+      <button
+        type="button"
+        className="btn btn-outline-success btn-sm container"
+      >
+        Back Home
+      </button>
+    </Link>
   </div>
 );
 
